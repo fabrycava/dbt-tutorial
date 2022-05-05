@@ -1,0 +1,608 @@
+
+
+============================== 2022-05-04 16:48:25.707683 | a100ed53-91f7-402b-8d0f-fc9a6c37ce81 ==============================
+16:48:25.707683 [info ] [MainThread]: Running with dbt=1.1.0
+16:48:25.707683 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\f.cavallaro\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+16:48:25.708683 [debug] [MainThread]: Tracking: tracking
+16:48:25.741868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014A4FA2F190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014A4FA2FF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014A4FA2F220>]}
+16:48:25.755560 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+16:48:25.755560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a100ed53-91f7-402b-8d0f-fc9a6c37ce81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014A4FA3D1C0>]}
+16:48:25.893584 [debug] [MainThread]: Parsing macros\adapters.sql
+16:48:25.915499 [debug] [MainThread]: Parsing macros\catalog.sql
+16:48:25.919499 [debug] [MainThread]: Parsing macros\etc.sql
+16:48:25.921500 [debug] [MainThread]: Parsing macros\materializations\copy.sql
+16:48:25.923499 [debug] [MainThread]: Parsing macros\materializations\incremental.sql
+16:48:25.938885 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+16:48:25.940878 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+16:48:25.941874 [debug] [MainThread]: Parsing macros\materializations\table.sql
+16:48:25.944785 [debug] [MainThread]: Parsing macros\materializations\view.sql
+16:48:25.946786 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+16:48:25.953872 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+16:48:25.955886 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+16:48:25.957897 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+16:48:25.963484 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+16:48:25.966484 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+16:48:25.973597 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+16:48:25.975628 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+16:48:25.981684 [debug] [MainThread]: Parsing macros\etc\statement.sql
+16:48:25.984684 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+16:48:25.986686 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+16:48:25.987101 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+16:48:25.988044 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+16:48:25.988044 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+16:48:25.989444 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+16:48:25.990918 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+16:48:25.992655 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+16:48:25.993656 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+16:48:25.996656 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+16:48:26.000655 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+16:48:26.009099 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+16:48:26.010108 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+16:48:26.021101 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+16:48:26.032093 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+16:48:26.034117 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+16:48:26.038989 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+16:48:26.041005 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+16:48:26.043005 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+16:48:26.044002 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+16:48:26.048999 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+16:48:26.061310 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+16:48:26.066331 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+16:48:26.076624 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+16:48:26.082624 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+16:48:26.084393 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+16:48:26.094495 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+16:48:26.095496 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+16:48:26.098495 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+16:48:26.099495 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+16:48:26.233356 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+16:48:26.242308 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+16:48:26.283696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a100ed53-91f7-402b-8d0f-fc9a6c37ce81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014A4FAA1130>]}
+16:48:26.303414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a100ed53-91f7-402b-8d0f-fc9a6c37ce81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014A4FA3D250>]}
+16:48:26.303414 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 191 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+16:48:26.303414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a100ed53-91f7-402b-8d0f-fc9a6c37ce81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014A4FA9FEB0>]}
+16:48:26.305422 [info ] [MainThread]: 
+16:48:26.305422 [debug] [MainThread]: Acquiring new bigquery connection "master"
+16:48:26.307424 [debug] [ThreadPool]: Acquiring new bigquery connection "list_grand-highway-265418"
+16:48:26.307424 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:48:26.308537 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: 'C:/Users/f.cavallaro/.dbt/dbt_user_creds.json''
+16:48:26.309576 [debug] [MainThread]: Connection 'master' was properly closed.
+16:48:26.309576 [debug] [MainThread]: Connection 'list_grand-highway-265418' was properly closed.
+16:48:26.309576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014A4FAFC910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014A4FB46850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014A4FB466D0>]}
+
+
+============================== 2022-05-04 16:48:59.087791 | 9d8c6d77-f8a9-4d94-942d-6c7f7b5d1e2e ==============================
+16:48:59.087791 [info ] [MainThread]: Running with dbt=1.1.0
+16:48:59.088900 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\f.cavallaro\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+16:48:59.088900 [debug] [MainThread]: Tracking: tracking
+16:48:59.113518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A53D1FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A53D1A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A54043D0>]}
+16:48:59.128609 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+16:48:59.129610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9d8c6d77-f8a9-4d94-942d-6c7f7b5d1e2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A542C280>]}
+16:48:59.183928 [debug] [MainThread]: Parsing macros\adapters.sql
+16:48:59.199069 [debug] [MainThread]: Parsing macros\catalog.sql
+16:48:59.203064 [debug] [MainThread]: Parsing macros\etc.sql
+16:48:59.204066 [debug] [MainThread]: Parsing macros\materializations\copy.sql
+16:48:59.206202 [debug] [MainThread]: Parsing macros\materializations\incremental.sql
+16:48:59.215406 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+16:48:59.216414 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+16:48:59.217414 [debug] [MainThread]: Parsing macros\materializations\table.sql
+16:48:59.220406 [debug] [MainThread]: Parsing macros\materializations\view.sql
+16:48:59.221404 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+16:48:59.227402 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+16:48:59.229400 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+16:48:59.231405 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+16:48:59.235408 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+16:48:59.238013 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+16:48:59.244121 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+16:48:59.245114 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+16:48:59.251035 [debug] [MainThread]: Parsing macros\etc\statement.sql
+16:48:59.254029 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+16:48:59.254029 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+16:48:59.255107 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+16:48:59.255107 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+16:48:59.256121 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+16:48:59.257107 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+16:48:59.258118 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+16:48:59.259116 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+16:48:59.261108 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+16:48:59.263132 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+16:48:59.266121 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+16:48:59.272109 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+16:48:59.273101 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+16:48:59.283106 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+16:48:59.292714 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+16:48:59.294722 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+16:48:59.298714 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+16:48:59.300713 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+16:48:59.302715 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+16:48:59.303727 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+16:48:59.307710 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+16:48:59.317385 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+16:48:59.321377 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+16:48:59.329378 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+16:48:59.337369 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+16:48:59.339375 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+16:48:59.351705 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+16:48:59.352708 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+16:48:59.356712 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+16:48:59.357707 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+16:48:59.522879 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+16:48:59.531571 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+16:48:59.579993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9d8c6d77-f8a9-4d94-942d-6c7f7b5d1e2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A54E20D0>]}
+16:48:59.599228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9d8c6d77-f8a9-4d94-942d-6c7f7b5d1e2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A542CC40>]}
+16:48:59.599228 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 191 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+16:48:59.600226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9d8c6d77-f8a9-4d94-942d-6c7f7b5d1e2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A551DAF0>]}
+16:48:59.602277 [info ] [MainThread]: 
+16:48:59.602769 [debug] [MainThread]: Acquiring new bigquery connection "master"
+16:48:59.604682 [debug] [ThreadPool]: Acquiring new bigquery connection "list_grand-highway-265418"
+16:48:59.604682 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:48:59.605690 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: 'C://Users/f.cavallaro/.dbt/dbt_user_creds.json''
+16:48:59.606689 [debug] [MainThread]: Connection 'master' was properly closed.
+16:48:59.606689 [debug] [MainThread]: Connection 'list_grand-highway-265418' was properly closed.
+16:48:59.606689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A54E21C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A54D3D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191A54D3610>]}
+
+
+============================== 2022-05-04 16:49:55.382736 | 2fc0d633-954d-4df6-a80c-83c8a9a78c55 ==============================
+16:49:55.382736 [info ] [MainThread]: Running with dbt=1.1.0
+16:49:55.383429 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\f.cavallaro\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+16:49:55.383429 [debug] [MainThread]: Tracking: tracking
+16:49:55.411134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027899DD4070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027899DD4AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027899DD4DC0>]}
+16:49:55.427594 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+16:49:55.428591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2fc0d633-954d-4df6-a80c-83c8a9a78c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027899DF7C70>]}
+16:49:55.484248 [debug] [MainThread]: Parsing macros\adapters.sql
+16:49:55.500443 [debug] [MainThread]: Parsing macros\catalog.sql
+16:49:55.503438 [debug] [MainThread]: Parsing macros\etc.sql
+16:49:55.504505 [debug] [MainThread]: Parsing macros\materializations\copy.sql
+16:49:55.506520 [debug] [MainThread]: Parsing macros\materializations\incremental.sql
+16:49:55.515511 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+16:49:55.517513 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+16:49:55.518541 [debug] [MainThread]: Parsing macros\materializations\table.sql
+16:49:55.520522 [debug] [MainThread]: Parsing macros\materializations\view.sql
+16:49:55.522519 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+16:49:55.527653 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+16:49:55.529783 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+16:49:55.531788 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+16:49:55.535781 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+16:49:55.538783 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+16:49:55.544068 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+16:49:55.545070 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+16:49:55.551067 [debug] [MainThread]: Parsing macros\etc\statement.sql
+16:49:55.553066 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+16:49:55.554070 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+16:49:55.555069 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+16:49:55.555069 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+16:49:55.556076 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+16:49:55.557074 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+16:49:55.558153 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+16:49:55.559242 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+16:49:55.560250 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+16:49:55.563249 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+16:49:55.566246 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+16:49:55.572022 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+16:49:55.573020 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+16:49:55.585095 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+16:49:55.595521 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+16:49:55.596534 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+16:49:55.601441 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+16:49:55.603520 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+16:49:55.604535 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+16:49:55.605444 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+16:49:55.609534 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+16:49:55.619526 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+16:49:55.623102 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+16:49:55.631103 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+16:49:55.637103 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+16:49:55.638104 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+16:49:55.648103 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+16:49:55.649103 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+16:49:55.652439 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+16:49:55.655611 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+16:49:55.798876 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+16:49:55.807878 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+16:49:55.847541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2fc0d633-954d-4df6-a80c-83c8a9a78c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027899EB1C40>]}
+16:49:55.867603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2fc0d633-954d-4df6-a80c-83c8a9a78c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027899DF7C10>]}
+16:49:55.867603 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 191 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+16:49:55.868684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2fc0d633-954d-4df6-a80c-83c8a9a78c55', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027899DF7A60>]}
+16:49:55.869690 [info ] [MainThread]: 
+16:49:55.869690 [debug] [MainThread]: Acquiring new bigquery connection "master"
+16:49:55.872029 [debug] [ThreadPool]: Acquiring new bigquery connection "list_grand-highway-265418"
+16:49:55.872029 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:49:55.873083 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: 'Users\\f.cavallaro\\.dbt\\dbt_user_creds.json''
+16:49:55.874033 [debug] [MainThread]: Connection 'master' was properly closed.
+16:49:55.874033 [debug] [MainThread]: Connection 'list_grand-highway-265418' was properly closed.
+16:49:55.874033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027899EB15E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027899EA13D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027899EA1BB0>]}
+
+
+============================== 2022-05-04 16:50:20.702470 | 5655aeae-01bb-4789-9a6c-3fa84249a6ea ==============================
+16:50:20.702470 [info ] [MainThread]: Running with dbt=1.1.0
+16:50:20.703146 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\f.cavallaro\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+16:50:20.703146 [debug] [MainThread]: Tracking: tracking
+16:50:20.729753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271F4941160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271F49418E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271F4941430>]}
+16:50:20.745075 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+16:50:20.745728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5655aeae-01bb-4789-9a6c-3fa84249a6ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271F494AD60>]}
+16:50:20.794660 [debug] [MainThread]: Parsing macros\adapters.sql
+16:50:20.813578 [debug] [MainThread]: Parsing macros\catalog.sql
+16:50:20.817578 [debug] [MainThread]: Parsing macros\etc.sql
+16:50:20.818580 [debug] [MainThread]: Parsing macros\materializations\copy.sql
+16:50:20.820579 [debug] [MainThread]: Parsing macros\materializations\incremental.sql
+16:50:20.834659 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+16:50:20.835656 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+16:50:20.837669 [debug] [MainThread]: Parsing macros\materializations\table.sql
+16:50:20.840667 [debug] [MainThread]: Parsing macros\materializations\view.sql
+16:50:20.842673 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+16:50:20.848580 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+16:50:20.850579 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+16:50:20.852579 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+16:50:20.856578 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+16:50:20.858579 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+16:50:20.864578 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+16:50:20.865579 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+16:50:20.870890 [debug] [MainThread]: Parsing macros\etc\statement.sql
+16:50:20.873911 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+16:50:20.874912 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+16:50:20.874912 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+16:50:20.875911 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+16:50:20.875911 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+16:50:20.876911 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+16:50:20.877912 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+16:50:20.879911 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+16:50:20.880911 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+16:50:20.883911 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+16:50:20.886495 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+16:50:20.894507 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+16:50:20.895508 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+16:50:20.907584 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+16:50:20.919585 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+16:50:20.921586 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+16:50:20.926585 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+16:50:20.929585 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+16:50:20.930587 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+16:50:20.931587 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+16:50:20.939453 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+16:50:20.951453 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+16:50:20.956453 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+16:50:20.965454 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+16:50:20.973453 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+16:50:20.975454 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+16:50:20.988453 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+16:50:20.989455 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+16:50:20.993453 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+16:50:20.994456 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+16:50:21.135284 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+16:50:21.143286 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+16:50:21.184877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5655aeae-01bb-4789-9a6c-3fa84249a6ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271F4A2CD90>]}
+16:50:21.202811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5655aeae-01bb-4789-9a6c-3fa84249a6ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271F494A880>]}
+16:50:21.202811 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 191 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+16:50:21.203997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5655aeae-01bb-4789-9a6c-3fa84249a6ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271F494A850>]}
+16:50:21.205093 [info ] [MainThread]: 
+16:50:21.205093 [debug] [MainThread]: Acquiring new bigquery connection "master"
+16:50:21.207045 [debug] [ThreadPool]: Acquiring new bigquery connection "list_grand-highway-265418"
+16:50:21.207045 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:50:21.207996 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: '\\Users\\f.cavallaro\\.dbt\\dbt_user_creds.json''
+16:50:21.207996 [debug] [MainThread]: Connection 'master' was properly closed.
+16:50:21.209005 [debug] [MainThread]: Connection 'list_grand-highway-265418' was properly closed.
+16:50:21.209005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271F4A2C5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271F4A32100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271F4A32640>]}
+
+
+============================== 2022-05-04 16:50:52.224042 | 7494a952-e4e3-45b1-962d-f941f53fed88 ==============================
+16:50:52.224042 [info ] [MainThread]: Running with dbt=1.1.0
+16:50:52.224042 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\f.cavallaro\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+16:50:52.224042 [debug] [MainThread]: Tracking: tracking
+16:50:52.252803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184106F1220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184106F1880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184106F13A0>]}
+16:50:52.269409 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+16:50:52.269409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7494a952-e4e3-45b1-962d-f941f53fed88', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001841071DDF0>]}
+16:50:52.322634 [debug] [MainThread]: Parsing macros\adapters.sql
+16:50:52.340855 [debug] [MainThread]: Parsing macros\catalog.sql
+16:50:52.343875 [debug] [MainThread]: Parsing macros\etc.sql
+16:50:52.345873 [debug] [MainThread]: Parsing macros\materializations\copy.sql
+16:50:52.346875 [debug] [MainThread]: Parsing macros\materializations\incremental.sql
+16:50:52.356938 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+16:50:52.357937 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+16:50:52.358942 [debug] [MainThread]: Parsing macros\materializations\table.sql
+16:50:52.361939 [debug] [MainThread]: Parsing macros\materializations\view.sql
+16:50:52.363939 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+16:50:52.369791 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+16:50:52.371430 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+16:50:52.373838 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+16:50:52.377842 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+16:50:52.380830 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+16:50:52.386834 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+16:50:52.387844 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+16:50:52.393835 [debug] [MainThread]: Parsing macros\etc\statement.sql
+16:50:52.395827 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+16:50:52.396835 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+16:50:52.397844 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+16:50:52.397844 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+16:50:52.398829 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+16:50:52.399850 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+16:50:52.400758 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+16:50:52.401831 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+16:50:52.403828 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+16:50:52.405845 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+16:50:52.408850 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+16:50:52.415828 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+16:50:52.415828 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+16:50:52.427074 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+16:50:52.437535 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+16:50:52.438535 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+16:50:52.443534 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+16:50:52.444535 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+16:50:52.446535 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+16:50:52.447535 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+16:50:52.452537 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+16:50:52.464536 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+16:50:52.469771 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+16:50:52.478771 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+16:50:52.487080 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+16:50:52.488076 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+16:50:52.501004 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+16:50:52.502096 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+16:50:52.505111 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+16:50:52.507078 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+16:50:52.674384 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+16:50:52.683463 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+16:50:52.729432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7494a952-e4e3-45b1-962d-f941f53fed88', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184107DEE20>]}
+16:50:52.748108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7494a952-e4e3-45b1-962d-f941f53fed88', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001841071DFD0>]}
+16:50:52.749140 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 191 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+16:50:52.749140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7494a952-e4e3-45b1-962d-f941f53fed88', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001841071D6A0>]}
+16:50:52.751621 [info ] [MainThread]: 
+16:50:52.752637 [debug] [MainThread]: Acquiring new bigquery connection "master"
+16:50:52.754637 [debug] [ThreadPool]: Acquiring new bigquery connection "list_grand-highway-265418"
+16:50:52.755641 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:50:52.756495 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: '/Users/f.cavallaro/.dbt/dbt_user_creds.json''
+16:50:52.756495 [debug] [MainThread]: Connection 'master' was properly closed.
+16:50:52.757507 [debug] [MainThread]: Connection 'list_grand-highway-265418' was properly closed.
+16:50:52.757507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184107DE100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184107D5910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184107D5400>]}
+
+
+============================== 2022-05-04 16:51:41.223119 | 55d07f13-27fc-4756-910b-369e972cfe0b ==============================
+16:51:41.223119 [info ] [MainThread]: Running with dbt=1.1.0
+16:51:41.224224 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\f.cavallaro\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+16:51:41.224224 [debug] [MainThread]: Tracking: tracking
+16:51:41.251010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002147AC13C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002147AC13E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002147AC13400>]}
+16:51:41.267330 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+16:51:41.268581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '55d07f13-27fc-4756-910b-369e972cfe0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002147AC26490>]}
+16:51:41.328697 [debug] [MainThread]: Parsing macros\adapters.sql
+16:51:41.344797 [debug] [MainThread]: Parsing macros\catalog.sql
+16:51:41.347797 [debug] [MainThread]: Parsing macros\etc.sql
+16:51:41.348797 [debug] [MainThread]: Parsing macros\materializations\copy.sql
+16:51:41.350798 [debug] [MainThread]: Parsing macros\materializations\incremental.sql
+16:51:41.360796 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+16:51:41.362797 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+16:51:41.363798 [debug] [MainThread]: Parsing macros\materializations\table.sql
+16:51:41.365797 [debug] [MainThread]: Parsing macros\materializations\view.sql
+16:51:41.367797 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+16:51:41.373796 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+16:51:41.375797 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+16:51:41.377797 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+16:51:41.381796 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+16:51:41.384797 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+16:51:41.390796 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+16:51:41.391797 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+16:51:41.397797 [debug] [MainThread]: Parsing macros\etc\statement.sql
+16:51:41.400797 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+16:51:41.401797 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+16:51:41.401797 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+16:51:41.402797 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+16:51:41.402797 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+16:51:41.403797 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+16:51:41.404797 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+16:51:41.406797 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+16:51:41.407797 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+16:51:41.410797 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+16:51:41.416801 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+16:51:41.424896 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+16:51:41.425892 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+16:51:41.439389 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+16:51:41.450297 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+16:51:41.453380 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+16:51:41.458383 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+16:51:41.460368 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+16:51:41.462334 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+16:51:41.463376 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+16:51:41.468375 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+16:51:41.480496 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+16:51:41.485497 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+16:51:41.494496 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+16:51:41.501496 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+16:51:41.503498 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+16:51:41.516496 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+16:51:41.517498 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+16:51:41.521496 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+16:51:41.522498 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+16:51:41.687529 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+16:51:41.696769 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+16:51:41.737100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '55d07f13-27fc-4756-910b-369e972cfe0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002147AD720D0>]}
+16:51:41.756692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '55d07f13-27fc-4756-910b-369e972cfe0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002147AC26A30>]}
+16:51:41.757202 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 191 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+16:51:41.757202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '55d07f13-27fc-4756-910b-369e972cfe0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002147AC9AB20>]}
+16:51:41.758227 [info ] [MainThread]: 
+16:51:41.759227 [debug] [MainThread]: Acquiring new bigquery connection "master"
+16:51:41.762275 [debug] [ThreadPool]: Acquiring new bigquery connection "list_grand-highway-265418"
+16:51:41.762775 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:51:42.606908 [debug] [ThreadPool]: Acquiring new bigquery connection "create_grand-highway-265418_dbt_fabry"
+16:51:42.606908 [debug] [ThreadPool]: Acquiring new bigquery connection "create_grand-highway-265418_dbt_fabry"
+16:51:42.606908 [debug] [ThreadPool]: BigQuery adapter: Creating schema "grand-highway-265418.dbt_fabry".
+16:51:42.606908 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+16:51:43.211543 [debug] [MainThread]: Connection 'master' was properly closed.
+16:51:43.211543 [debug] [MainThread]: Connection 'create_grand-highway-265418_dbt_fabry' was properly closed.
+16:51:43.212643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002147AD726D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002147AD72B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002147AD28C70>]}
+
+
+============================== 2022-05-04 16:55:36.496339 | d8f21080-996a-4f4b-84b4-9ad1798dddd1 ==============================
+16:55:36.496339 [info ] [MainThread]: Running with dbt=1.1.0
+16:55:36.497470 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\f.cavallaro\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+16:55:36.497470 [debug] [MainThread]: Tracking: tracking
+16:55:36.523367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A258D00D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A258D0160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A258D0130>]}
+16:55:36.538640 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+16:55:36.539930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd8f21080-996a-4f4b-84b4-9ad1798dddd1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A258FC130>]}
+16:55:36.586699 [debug] [MainThread]: Parsing macros\adapters.sql
+16:55:36.602571 [debug] [MainThread]: Parsing macros\catalog.sql
+16:55:36.607118 [debug] [MainThread]: Parsing macros\etc.sql
+16:55:36.608112 [debug] [MainThread]: Parsing macros\materializations\copy.sql
+16:55:36.609105 [debug] [MainThread]: Parsing macros\materializations\incremental.sql
+16:55:36.619113 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+16:55:36.621102 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+16:55:36.622094 [debug] [MainThread]: Parsing macros\materializations\table.sql
+16:55:36.625098 [debug] [MainThread]: Parsing macros\materializations\view.sql
+16:55:36.627103 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+16:55:36.634105 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+16:55:36.636197 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+16:55:36.638456 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+16:55:36.644458 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+16:55:36.647478 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+16:55:36.654467 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+16:55:36.656477 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+16:55:36.663461 [debug] [MainThread]: Parsing macros\etc\statement.sql
+16:55:36.666380 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+16:55:36.667459 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+16:55:36.668459 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+16:55:36.669461 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+16:55:36.669461 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+16:55:36.670462 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+16:55:36.671461 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+16:55:36.673465 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+16:55:36.675466 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+16:55:36.678471 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+16:55:36.682382 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+16:55:36.694378 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+16:55:36.695380 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+16:55:36.705758 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+16:55:36.713742 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+16:55:36.715937 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+16:55:36.722158 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+16:55:36.724145 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+16:55:36.726153 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+16:55:36.726153 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+16:55:36.732158 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+16:55:36.744484 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+16:55:36.749408 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+16:55:36.758503 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+16:55:36.766207 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+16:55:36.768485 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+16:55:36.780818 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+16:55:36.782731 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+16:55:36.785819 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+16:55:36.787804 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+16:55:36.946263 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+16:55:36.955432 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+16:55:37.001837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd8f21080-996a-4f4b-84b4-9ad1798dddd1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A259B58E0>]}
+16:55:37.019009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd8f21080-996a-4f4b-84b4-9ad1798dddd1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A258FCE20>]}
+16:55:37.019009 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 191 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+16:55:37.020007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd8f21080-996a-4f4b-84b4-9ad1798dddd1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A258FC820>]}
+16:55:37.021008 [info ] [MainThread]: 
+16:55:37.021008 [debug] [MainThread]: Acquiring new bigquery connection "master"
+16:55:37.024006 [debug] [ThreadPool]: Acquiring new bigquery connection "list_test-project-259611"
+16:55:37.024006 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:55:37.645293 [debug] [ThreadPool]: Acquiring new bigquery connection "create_test-project-259611_dbt_fabry"
+16:55:37.646305 [debug] [ThreadPool]: Acquiring new bigquery connection "create_test-project-259611_dbt_fabry"
+16:55:37.646305 [debug] [ThreadPool]: BigQuery adapter: Creating schema "test-project-259611.dbt_fabry".
+16:55:37.646305 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+16:55:38.418739 [debug] [ThreadPool]: Acquiring new bigquery connection "list_test-project-259611_dbt_fabry"
+16:55:38.419969 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:55:39.034138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd8f21080-996a-4f4b-84b4-9ad1798dddd1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A259B5A30>]}
+16:55:39.034138 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+16:55:39.035163 [info ] [MainThread]: 
+16:55:39.067028 [debug] [Thread-1  ]: Began running node model.jaffle_shop.my_first_dbt_model
+16:55:39.067028 [info ] [Thread-1  ]: 1 of 2 START table model dbt_fabry.my_first_dbt_model .......................... [RUN]
+16:55:39.068018 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.jaffle_shop.my_first_dbt_model"
+16:55:39.068018 [debug] [Thread-1  ]: Began compiling node model.jaffle_shop.my_first_dbt_model
+16:55:39.068018 [debug] [Thread-1  ]: Compiling model.jaffle_shop.my_first_dbt_model
+16:55:39.070038 [debug] [Thread-1  ]: Writing injected SQL for node "model.jaffle_shop.my_first_dbt_model"
+16:55:39.075806 [debug] [Thread-1  ]: finished collecting timing info
+16:55:39.075806 [debug] [Thread-1  ]: Began executing node model.jaffle_shop.my_first_dbt_model
+16:55:39.102425 [debug] [Thread-1  ]: Writing runtime SQL for node "model.jaffle_shop.my_first_dbt_model"
+16:55:39.110375 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+16:55:39.111543 [debug] [Thread-1  ]: On model.jaffle_shop.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_first_dbt_model"} */
+
+
+  create or replace table `test-project-259611`.`dbt_fabry`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+  
+16:55:42.726147 [debug] [Thread-1  ]: finished collecting timing info
+16:55:42.727158 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd8f21080-996a-4f4b-84b4-9ad1798dddd1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A26A6FD00>]}
+16:55:42.727158 [info ] [Thread-1  ]: 1 of 2 OK created table model dbt_fabry.my_first_dbt_model ..................... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.66s]
+16:55:42.728060 [debug] [Thread-1  ]: Finished running node model.jaffle_shop.my_first_dbt_model
+16:55:42.729110 [debug] [Thread-1  ]: Began running node model.jaffle_shop.my_second_dbt_model
+16:55:42.729110 [info ] [Thread-1  ]: 2 of 2 START view model dbt_fabry.my_second_dbt_model .......................... [RUN]
+16:55:42.729110 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.jaffle_shop.my_second_dbt_model"
+16:55:42.729110 [debug] [Thread-1  ]: Began compiling node model.jaffle_shop.my_second_dbt_model
+16:55:42.729110 [debug] [Thread-1  ]: Compiling model.jaffle_shop.my_second_dbt_model
+16:55:42.733527 [debug] [Thread-1  ]: Writing injected SQL for node "model.jaffle_shop.my_second_dbt_model"
+16:55:42.737434 [debug] [Thread-1  ]: finished collecting timing info
+16:55:42.737434 [debug] [Thread-1  ]: Began executing node model.jaffle_shop.my_second_dbt_model
+16:55:42.758521 [debug] [Thread-1  ]: Writing runtime SQL for node "model.jaffle_shop.my_second_dbt_model"
+16:55:42.763612 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+16:55:42.765605 [debug] [Thread-1  ]: On model.jaffle_shop.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_second_dbt_model"} */
+
+
+  create or replace view `test-project-259611`.`dbt_fabry`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `test-project-259611`.`dbt_fabry`.`my_first_dbt_model`
+where id = 1;
+
+
+16:55:44.136674 [debug] [Thread-1  ]: finished collecting timing info
+16:55:44.137613 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd8f21080-996a-4f4b-84b4-9ad1798dddd1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A26ABD910>]}
+16:55:44.138610 [info ] [Thread-1  ]: 2 of 2 OK created view model dbt_fabry.my_second_dbt_model ..................... [[32mOK[0m in 1.41s]
+16:55:44.139609 [debug] [Thread-1  ]: Finished running node model.jaffle_shop.my_second_dbt_model
+16:55:44.141598 [debug] [MainThread]: Acquiring new bigquery connection "master"
+16:55:44.141598 [info ] [MainThread]: 
+16:55:44.141598 [info ] [MainThread]: Finished running 1 table model, 1 view model in 7.12s.
+16:55:44.142601 [debug] [MainThread]: Connection 'master' was properly closed.
+16:55:44.142601 [debug] [MainThread]: Connection 'create_test-project-259611_dbt_fabry' was properly closed.
+16:55:44.142601 [debug] [MainThread]: Connection 'list_test-project-259611_dbt_fabry' was properly closed.
+16:55:44.142601 [debug] [MainThread]: Connection 'model.jaffle_shop.my_second_dbt_model' was properly closed.
+16:55:44.166373 [info ] [MainThread]: 
+16:55:44.167448 [info ] [MainThread]: [32mCompleted successfully[0m
+16:55:44.167448 [info ] [MainThread]: 
+16:55:44.169885 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+16:55:44.170863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A258FCB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A26A6F1F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025A26A6F2B0>]}
+
+
+============================== 2022-05-04 16:58:08.452454 | 3970ad39-274a-4b3f-aaa9-654236abd917 ==============================
+16:58:08.452454 [info ] [MainThread]: Running with dbt=1.1.0
+16:58:08.453441 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\f.cavallaro\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+16:58:08.453441 [debug] [MainThread]: Tracking: tracking
+16:58:08.501071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EA349E100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EA349EFA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EA349E280>]}
+16:58:09.550994 [debug] [MainThread]: Executing "git --help"
+16:58:09.609996 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+16:58:09.609996 [debug] [MainThread]: STDERR: "b''"
+16:58:09.616001 [debug] [MainThread]: Acquiring new bigquery connection "debug"
+16:58:09.616001 [debug] [MainThread]: Opening a new connection, currently in state init
+16:58:09.618023 [debug] [MainThread]: On debug: select 1 as id
+16:58:11.296486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EB3145070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EB3145340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021EB3145550>]}
+16:58:11.874836 [debug] [MainThread]: Connection 'debug' was properly closed.
